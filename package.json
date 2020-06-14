@@ -1,0 +1,8 @@
+{
+  "name": "event-system-creator",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:yuhenabc/event-system-creator.git",
+  "author": "yuhenabc <yuhenabc@126.com>",
+  "license": "MIT"
+}
