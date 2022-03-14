@@ -1,6 +1,6 @@
-import EventSystem from './src/event-system.js';
+import EventSystemCreator from './src/event-system-creator.js';
 
-const es = new EventSystem();
+const es = new EventSystemCreator();
 console.log(es);
 
 const logFoo = (data) => {
@@ -21,5 +21,6 @@ console.log('==================');
 
 es.off('foo', logFoo);
 es.off('foo');
+console.log(es);
 es.emit('foo', 'bar');
 es.emit('bar', { a: 1, b: 2, c: 3 });

@@ -1,4 +1,4 @@
-export default class EventSystem {
+export default class EventSystemCreator {
     constructor() {
         this.e = new EventTarget();
         this.funsMap = new Map();
@@ -11,6 +11,7 @@ export default class EventSystem {
     }
     off(type, listener) {
         this.e.removeEventListener(type, this.funsMap.get(listener));
+        this.funsMap.delete(listener);
     }
     emit(type, data) {
         this.e.dispatchEvent(new CustomEvent(type, { detail: data }));
