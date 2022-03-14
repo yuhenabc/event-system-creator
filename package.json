@@ -2,7 +2,15 @@
   "name": "event-system-creator",
   "version": "0.1.0",
   "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "repository": "git@github.com:yuhenabc/event-system-creator.git",
   "author": "yuhenabc <yuhenabc@126.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@rollup/plugin-babel": "^5.3.1",
+    "rollup": "^2.70.1"
+  }
 }

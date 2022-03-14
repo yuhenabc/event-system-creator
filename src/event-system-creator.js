@@ -1,17 +1,17 @@
 export default class EventSystemCreator {
     constructor() {
         this.e = new EventTarget();
-        this.funsMap = new Map();
+        this.listenerMap = new Map();
     }
     on(type, listener) {
-        this.funsMap.set(listener, (event) => {
+        this.listenerMap.set(listener, (event) => {
             listener(event.detail);
         });
-        this.e.addEventListener(type, this.funsMap.get(listener));
+        this.e.addEventListener(type, this.listenerMap.get(listener));
     }
     off(type, listener) {
-        this.e.removeEventListener(type, this.funsMap.get(listener));
-        this.funsMap.delete(listener);
+        this.e.removeEventListener(type, this.listenerMap.get(listener));
+        this.listenerMap.delete(listener);
     }
     emit(type, data) {
         this.e.dispatchEvent(new CustomEvent(type, { detail: data }));
