@@ -2,6 +2,13 @@
   "name": "event-system-creator",
   "version": "0.1.0",
   "main": "index.js",
+  "module": "src/event-system-creator.mjs",
+  "exports": {
+    ".": {
+      "import": "./src/event-system-creator.mjs",
+      "require": "./index.js"
+    }
+  },
   "scripts": {
     "build": "rollup -c"
   },

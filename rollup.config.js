@@ -1,7 +1,7 @@
 import { babel } from '@rollup/plugin-babel';
 
 const config = {
-    input: 'src/event-system-creator.js',
+    input: 'src/event-system-creator.mjs',
     output: {
         file: 'index.js',
         format: 'cjs',
