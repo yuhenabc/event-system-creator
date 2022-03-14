@@ -1,4 +1,4 @@
-import EventSystemCreator from './src/event-system-creator.js';
+import EventSystemCreator from './src/event-system-creator.mjs';
 
 const es = new EventSystemCreator();
 console.log(es);
