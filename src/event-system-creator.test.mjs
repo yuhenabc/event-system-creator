@@ -1,7 +1,6 @@
-import EventSystemCreator from './src/event-system-creator.mjs';
+import EventSystemCreator from './event-system-creator.mjs';
 
 const es = new EventSystemCreator();
-console.log(es);
 
 const logFoo = (data) => {
     console.log('foo', data);
@@ -20,7 +19,7 @@ es.emit('bar', { a: 1, b: 2, c: 3 });
 console.log('==================');
 
 es.off('foo', logFoo);
-es.off('foo');
-console.log(es);
-es.emit('foo', 'bar');
+es.off('bar', logBar);
+
+es.emit('foo', 'go');
 es.emit('bar', { a: 1, b: 2, c: 3 });

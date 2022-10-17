@@ -10,7 +10,8 @@
     }
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "node test.mjs"
   },
   "repository": "git@github.com:yuhenabc/event-system-creator.git",
   "author": "yuhenabc <yuhenabc@126.com>",
