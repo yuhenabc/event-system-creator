@@ -1,8 +1,8 @@
 .vscode
-src
 node_modules
 
 *.test.js
+*.test.mjs
 yarn.lock
 index.html
 rollup.config.js
