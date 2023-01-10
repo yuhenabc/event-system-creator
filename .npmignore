@@ -1,5 +1,6 @@
 .idea
 .vscode
+.github
 node_modules
 .prettierrc
 *.test.js
