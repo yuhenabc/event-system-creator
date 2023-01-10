@@ -1,8 +1,10 @@
+.idea
 .vscode
 node_modules
-
+.prettierrc
 *.test.js
 *.test.mjs
 yarn.lock
+package-lock.json
 index.html
 rollup.config.js
